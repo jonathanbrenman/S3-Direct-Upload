@@ -4,10 +4,10 @@ AWS Subida MP4 directa a bucket con nombre random - NodeJs
 
 - Crear archivo .env en la raiz del repo con las siguiente variables
 
-s3Url=https://<bucket>.s3.amazonaws.com
+`s3Url=https://<bucket>.s3.amazonaws.com
 accessKey=<accessKey>
 secretKey=<secretKey>
-bucket=<bucket-name>
+bucket=<bucket-name>`
 
 1) npm install
 2) npm start
