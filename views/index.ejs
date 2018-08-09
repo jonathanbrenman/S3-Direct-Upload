@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    </head>
+    <body>
+        <form action="<%=url%>" method="post" enctype="multipart/form-data">
+            <input type="hidden" name="key" value="<%= credentials.fields.key %>" />
+            <input type="hidden" name="acl" value="private" />
+            <input type="hidden" name="Content-Type" value="video/mp4" />
+            <input type="hidden" name="AWSAccessKeyId" value="<%= credentials.fields.AWSAccessKeyId %>" />
+            <input type="hidden" name="Policy" value="<%= credentials.fields.policy %>" />
+            <input type="hidden" name="Signature" value="<%= credentials.fields.signature %>" />
+            File: <input type="file" name="file" /> <br />
+            <!-- The elements after this will be ignored -->
+            <input type="submit" name="submit" value="Upload to Amazon S3" />
+        </form>
+    </body>
+</html>
